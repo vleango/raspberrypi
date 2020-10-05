@@ -1,0 +1,21 @@
+#!/bin/bash
+
+hostname
+echo ""
+
+echo "CPU Frequency"
+vcgencmd measure_clock arm
+echo ""
+
+vcgencmd measure_temp
+echo ""
+
+echo "Memory Information"
+free -m
+echo ""
+
+echo "Disk Information"
+df -h
+echo ""
+
+
