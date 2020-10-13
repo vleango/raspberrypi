@@ -55,6 +55,9 @@ pi@raspberrypi:~ $ cat ~/.bash_aliases
 alias check_temp='watch -n 5 vcgencmd measure_temp'
 alias check_ram='free -m'
 alias check_diskspace='df -m'
+
+alias docker-reset='docker system prune --force --volumes && docker container ls -aq | xargs docker container rm -f'
+
 ```
 
 
